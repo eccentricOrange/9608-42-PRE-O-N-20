@@ -14,6 +14,10 @@ These are the files that constute the solution to the pre-release material for C
 | Conponent Pseudocode | `.psu` | All pseudocode, grouped by the task numbers, written using an open-source [custom-built extension](https://github.com/eccentricOrange/NPP-CAIE-Pseudocode-Highlighting-plugin). |
 | Standalone Compiled Program | `.py` | The final Python program. |
 | Standalone Compiled Pseudocode | `.psu` | The final pseudocode. |
+| Assembly code | `.docx` | The assembly code done in *Word* to leverage the tables from the question paper. |
+| TASK_1_1 | `.png` | The low-level program as required by TASK 1.1. |
+| TASK_1_3 | `.png` | The low-level program as required by TASK 1.3. |
+| TASK_1_5 | `.png` | The low-level program as required by TASK 1.5. |
 
 <br> <br>
 
@@ -75,4 +79,66 @@ STX     0xFFF6
 The program is given in the table below, and is in the attached *Word* document.
 
 <div style="text-align:center"><img src="TASK_1_5.png"/></div>
+
+<br><br>
+
+# TASK 2 – Declarative programming
+> A knowledge base contains information about students in a class, the colours they like and the colours they do not like. A declarative programming language is used to query the knowledge base.
+> 
+> Some clauses in the knowledge base are shown.
+> ```person(luke).
+> person(alice).
+> person(taylor).
+> person(nadia).
+> colour(blue).
+> colour(red).
+> colour(green).
+> colour(yellow).
+> likes_colour(alice, yellow).
+> likes_colour(alice, blue).
+> dislikes_colour(taylor, red).
+> dislikes_colour(nadia, green).
+> ```
+> <br>
+
+<br>
+
+## TASK 2.1
+> Two new students are joining the class: Mehrdad and Nigel. They need to be added to the knowledge base.
+>
+> Four further colours: pink, orange, purple and black need to be added to the knowledge base.
+>
+> Write clauses to add the two new students and the new colours to the knowledge base.
+
+```
+person(mehrdad).
+person(nigel).
+colour(pink).
+colour(orange).
+colour(pueple).
+colour(black).
+```
+
+# TASK 2.2
+> Add a clause that states Nadia likes the colour red.
+
+```
+likes_colour(nadia, red).
+```
+
+# TASK 2.3
+> Add a clause that states Mehrdad does not like the colour pink.
+
+```
+dislikes_colour(mehrdad, pink).
+```
+
+# TASK 2.4
+> Write a goal to find all the colours that a person likes.
+
+We will consider Alice as an example and list all the colours she likes.
+
+```
+likes_colour(alice, Colour)
+```
 
