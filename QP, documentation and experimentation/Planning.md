@@ -18,6 +18,8 @@ These are the files that constute the solution to the pre-release material for C
 | TASK_1_1 | `.png` | The low-level program as required by TASK 1.1. |
 | TASK_1_3 | `.png` | The low-level program as required by TASK 1.3. |
 | TASK_1_5 | `.png` | The low-level program as required by TASK 1.5. |
+| TASK_3_2 | `.png` | The linked list as required by TASK 3.2. |
+| TASK_3_3 | `.png` | The linked list as required by TASK 3.3. |
 
 <br> <br>
 
@@ -119,21 +121,21 @@ colour(pueple).
 colour(black).
 ```
 
-# TASK 2.2
+## TASK 2.2
 > Add a clause that states Nadia likes the colour red.
 
 ```
 likes_colour(nadia, red).
 ```
 
-# TASK 2.3
+## TASK 2.3
 > Add a clause that states Mehrdad does not like the colour pink.
 
 ```
 dislikes_colour(mehrdad, pink).
 ```
 
-# TASK 2.4
+## TASK 2.4
 > Write a goal to find all the colours that a person likes.
 
 We will consider Alice as an example and list all the colours she likes.
@@ -142,3 +144,90 @@ We will consider Alice as an example and list all the colours she likes.
 likes_colour(alice, Colour)
 ```
 
+<div style="page-break-after: always"></div>
+
+# TASK 3
+> A linked list is an Abstract Data Type.
+> 
+> A linked list is used to store data in a linear structure.
+
+## TASK 3.1
+> Discuss what a node and a pointer are in terms of a linked list.
+
+Each element in a linked list is stored in a **node**. Unlike an array where each element simply has an index value and traversing it simply requires incrementing a counter, every element in a linked list leads to the next element directly using a **pointer**.
+
+Consider the linked list of names of students below, which starts at element `[4]` and ends at `[5]`. Each row is a node, and it points to the next element. If the list is traversed using the pointers, we would get this order of elements: Aakash, Anuj, Kalyani, Shiv, Shrey, Sukriti.
+
+| Element ID | Element Value | Pointer |
+| -- | -- | -- |
+| 0 | "Shrey" | 5 |
+| 1 | "Kalyani" | 3 |
+| 2 | "Anuj" | 1 |
+| 3 | "Shiv" | 0 |
+| 4 | "Aakash" | 2 |
+| 5 | "Sukriti" | -1 |
+
+## TASK 3.2
+> A company has a list of destinations that are visited as part of a round the world holiday.
+>
+> The destinations are:
+> * Paris, France
+> * Rome, Italy
+> * New Delhi, India
+> * Kuala Lumpur, Malaysia
+> * Wellington, New Zealand
+> * New York, USA
+>
+> The destinations are stored in a linked list in the order shown.
+>
+> Draw a diagram to represent the data as a linked list.
+>
+> Use the symbol Ø to represent the null pointer.
+
+<div style="text-align:center"><img src="TASK_3_2.png"/></div>
+
+## TASK 3.3
+> A further destination is added after New York; this destination is Reykjavik, Iceland.
+> 
+> Add the new destination to the diagram of your linked list.
+
+<div style="text-align:center"><img src="TASK_3_3.png"/></div>
+
+## TASK 3.4
+> Discuss how a node would be removed from the linked list.
+
+A linked list can be setup using two 1-D arrays: `LinkedList` for the data, and `LinkedListPointers` for pointers. An independent subroutine to delete an item `ItemToDelete` (passed as a parameter) from a linked list would be considered.
+
+Firs the routine would traverse the linked list to find `ItemToDelete`; if it could not be found, an error message would be output and the routine would terminate. Once `ItemToDelete` is found (say at index `n`), `LinkedList[n]` is set to a null value. The pointer of the previous element is set to the element after the one at position `n`.
+
+## TASK 3.5
+> Write **program code** to declare the linked list, using an array.
+
+| Identifier | Data Type | Purpose |
+| -- | -- | -- |
+| `insert()` | `PROCEDURE` | A subroutine to insert a new item at the end of the linked list (unless it is full). |
+| tempPointer (`insert()` scope) | `INTEGER` | A temporary holding for the start pointer while a new item is inserted. |
+| `traverse()` | `PROCEDURE` | A subroutine to traverse the linked list and print out its elements. |
+| startPointer | `INTEGER` | A pointer to the first element of the linked list. |
+| heapStartPointer | `INTEGER` | A pointer to the next free location in the linked list. |
+| nullPointer | `INTEGER` | Constant for a termanating pointer. |
+| Destinations | `ARRAY[0:9] OF STRING` | Data stored in the linked list. |
+| DestinationsPointers | `ARRAY[0:9] OF INTEGER` | Linked list pointers. |
+| Destination | `STRING` | A `for` loop element used while inserting items to the linked list. |
+
+## TASK 3.6
+> Extend your **program code** by writing a subroutine that adds a new destination to the end of your linked list.
+
+## TASK 3.7
+>Extend your **program code** by writing a subroutine to delete the destination node entered by the user from the linked list.
+
+| Identifier | Data Type | Purpose |
+| -- | -- | -- |
+| `delete()` | `PROCEDURE` | Delete the given element from the linked list. |
+| index (`delete()` scope) | `INTEGER` | The pointer to the element to be deleted. |
+| oldIndex (`delete()` scope) | `INTEGER` | Pointer to the next element. |
+| tempPointer (`delete()` scope) | `INTEGER` | A temporary holding for the start pointer while a new item is inserted. |
+
+## TASK 3.8
+> Discuss other linked list operations that could be implemented.
+Write **program code** to implement the operation(s) you discuss.
