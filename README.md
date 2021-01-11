@@ -10,7 +10,7 @@ These are the files that constute the solution to the pre-release material for C
 | -- | -- | -- |
 | 9608_w20_PM_42 | `.pdf` | The pre-release material file released by CAIE. |
 | Planning | `.md` | This is the markdown text file that this PDF was created from. |
-| Planning | `.pdf` | You are currently reading this file. It describes the solution used in answering the pre-release material and houses all material apart from code (such as identifier tables and structured English). |
+| Planning | `.pdf` | It describes the solution used in answering the pre-release material and houses all material apart from code (such as identifier tables and structured English). |
 | Main Python notebook | `.ipynb` | The [Jupyter Notebook](https://jupyter.org/) in which the Python code was originally written. <br> <br> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/eccentricOrange/9608-42-PRE-O-N-20/HEAD) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/eccentricOrange/9608-42-PRE-O-N-20/blob/master/Main%20Python%20notebook.ipynb) |
 | Main Python notebook | `.pdf` | The PDF version of the Jupyter Notebook (for the viewer whose system doesn't have Jupyter). |
 | Python Programs | `.py` | The Python 3.8 file that contains all executable code (for the viewer whose system doesn't have Jupyter). | 
