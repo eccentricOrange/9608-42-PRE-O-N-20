@@ -1,7 +1,10 @@
 # 9608/42/PRE/O/N/20
-Last update: Anuj Verma, 00:03 12/10/2020
+Last update: Anuj Verma, 00:03 IST 12/10/2020
 
-These are the files that constute the solution to the pre-release material for Computer Science component 9608/42 of the October/November 2020 examination series.
+### Disclaimer about all resources here
+While all reasonable efforts have been made to ensure full compatibility with the syllabuses (and the author himself uses these for their own practice and study), these are **not official** resources and have not been endorsed by Cambridge International Assessment Education for any syllabus. Please use them at your own discretion. The author will not be responsible for any syllabus mismatches.
+
+These are the files that constute the solution to the pre-release material for Computer Science component 9608/42 of the October/November 2020 examination series. This is the solution I created and it need not follow from the mark scheme.
 
 | Filename | Type | Purpose |
 | -- | -- | -- |
