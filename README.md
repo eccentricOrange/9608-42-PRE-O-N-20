@@ -20,3 +20,5 @@ These are the files that constute the solution to the pre-release material for C
 | TASK_1_5 | `.png` | The low-level program as required by TASK 1.5. |
 | TASK_3_2 | `.png` | The linked list as required by TASK 3.2. |
 | TASK_3_3 | `.png` | The linked list as required by TASK 3.3. |
+
+[![Notebooks Made with Jupyter](https://img.shields.io/badge/Notebooks%20made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
